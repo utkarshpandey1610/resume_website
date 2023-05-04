@@ -1,0 +1,205 @@
+.top-container {
+  background-color: #E4F9F5;
+  /*margin-top:0;
+  margin-left: 0;
+  margin-bottom: 0;
+;*/
+  position: relative;
+  /*beacuse cloud absolut hai and if we don't make .top-container "relative" then cloud wala element will be relative to
+"body"
+sar- Now in order to position it relative to something, one of its parents has to have its position set as
+
+relative.
+
+And if we don't then it will be relative to the body.
+
+So in our case I want us to be able to position our bottom cloud relative to this entire top container.
+
+So I'm going to set the position of our top container to relative.*/
+  padding-top: 100px;
+}
+
+.top-cloud {
+  position: absolute;
+  top: 50px;
+  right: 300px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  bottom: 300px;
+  left: 300px;
+}
+
+p {
+  /*same reason default ko zero karne ke liye*/
+  margin: 0;
+  line-height: 2;
+}
+
+
+
+body {
+  /*ye sab isliye likha hai taki jo default values hoti hai
+  browser ke dwara unko 0 kiya ja sake aur ye pura ek kone me
+  sat jaye jo bhi div me likha hai -43*/
+  /*margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-align:centre;*/
+  /*we can write*/
+  margin: 0;
+  /*--to remve all margin;-43*/
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+span {
+  text-decoration: underline;
+}
+
+h1 {
+  /*to remove default value of h1 from top;-43*/
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.62rem;
+  color: #66BFBF
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  margin-top: 0;
+  font-weight: normal;
+  line-height: 2;
+
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+  text-align: left;
+}
+
+a {
+  color: #11999E;
+
+}
+a:hover{
+  color: #EAF6F6;
+}
+
+.skill-row {
+  /*width:50%;
+  margin:auto;*/
+  display: inline-block;
+  width: 50%;
+  margin: 50px auto 50px auto;
+  line-height: 2;
+  text-align: left;
+}
+.img0{
+  border-radius: 50%;
+  width:25%;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+.img1 {
+  border-radius: 50%;
+  width:25%;
+  float:left;
+  margin-right: 30px;
+}
+.img2{
+  width:25%;
+  float:right;
+  margin-left: 30px;
+}
+.design{
+  /*clear: left;- to don't have anything to be wraped around on it's left" "oppositnr of float"*/
+  padding-bottom: 0px;
+  margin-bottom: 0;
+}
+.chilli{
+  /*clear: right;- to don't have anything to be wraped around on it's right" "oppositnr of float"*/
+  padding-top: 0px;
+}
+.intro{
+  width:40%;
+/*  text-align: center;- this will not work because width is specified so using 'margin:0 auto to make it in centre'*/
+  margin: 0 auto;
+  color: #40514E;
+font-family: 'Montserrat', sans-serif;
+padding-bottom: 100px;
+}
+.line{
+  width:5%;
+  border: 8px dotted;
+ border-style: none none dotted;
+ color:#EAF6F6;
+}
+.skill{
+  padding-top:100px;
+}
+.touch{
+  padding-top:50px;
+}
+.hotwings{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.fuck{
+  padding-bottom: 30px;
+  width:50%;
+  margin: auto;
+  line-height: 2;
+}
+.btn {
+  -webkit-border-radius: 26;
+  -moz-border-radius: 26;
+  border-radius: 26px;
+  -webkit-box-shadow: 1px 1px 3px #66BFBF;
+  -moz-box-shadow: 1px 1px 3px #66BFBF;
+  box-shadow: 1px 1px 3px #66BFBF;
+  font-family: Arial;
+  color: #FFFF;
+  font-size: 20px;
+  background: #66BFBF;
+  padding: 10px 22px 10px 20px;
+  text-decoration: none;
+}
+.middle-container{
+  margin: 100px auto;
+}
+
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+.bottom-container{
+  background-color: #66BFBF;
+  padding: 50px;
+  margin-top:70px;
+}
+.footer-link{
+  margin-right:30px;
+  color: #11999E;
+
+}
+.last{
+  padding-top: 50px;
+  color: #EAF6F6;
+  font-size: 10px;
+
+
+}
